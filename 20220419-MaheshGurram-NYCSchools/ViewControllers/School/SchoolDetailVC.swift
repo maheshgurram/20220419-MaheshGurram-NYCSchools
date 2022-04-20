@@ -195,7 +195,7 @@ extension SchoolDetailVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 30))
-        view.backgroundColor = UIColor(red: 1/256, green: 34/256, blue: 106/256, alpha: 1)// .blue
+        view.backgroundColor = UIColor(red: 1/256, green: 34/256, blue: 106/256, alpha: 1)
         let headerLabel = UILabel(frame: CGRect(x: 15, y: 0, width: view.frame.width, height: 30))
         view.addSubview(headerLabel)
 

@@ -9,6 +9,8 @@ import Foundation
 
 class PrintLog {
     
+    
+    // Print loogs only when the app is run in simulator
     static func printToConsole(str: String) {
         #if targetEnvironment(simulator)
             print(str)

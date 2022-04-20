@@ -236,7 +236,7 @@ extension SchoolsListVC: SchoolTableViewCellDelegate {
         guard let phone = school.phone_number,
             let url = URL(string: "tel://\(phone)") ,
               UIApplication.shared.canOpenURL(url) else {
-            displayAlert(title: "Cannot open", message: "Please try on real device to make phone call")
+            displayAlert(title: "Can't open", message: "Please try on real device to make phone call")
             return
         }
         
@@ -251,7 +251,7 @@ extension SchoolsListVC: SchoolTableViewCellDelegate {
         guard let email = school.school_email,
             let url = URL(string: "mailto:\(email)") ,
               UIApplication.shared.canOpenURL(url) else {
-            displayAlert(title: "Cannot open", message: "Please try on real device to send email")
+            displayAlert(title: "Can't open", message: "Please try on real device to send email")
             return
         }
         
